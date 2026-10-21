@@ -1,0 +1,31 @@
+.lines {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: var(--text-small);
+}
+
+.qty {
+  display: inline-grid;
+  place-items: center;
+  min-width: 28px;
+  height: 28px;
+  margin-right: 4px;
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--sun);
+  color: var(--text);
+  font-family: var(--font-number);
+  font-weight: 700;
+}

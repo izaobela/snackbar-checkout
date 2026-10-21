@@ -1,0 +1,23 @@
+.face {
+  display: block;
+  fill: currentColor;
+}
+
+/* Steps, so the blink is a frame, not a fade. */
+.eye {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: blink 4.5s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%,
+  93%,
+  100% {
+    transform: scaleY(1);
+  }
+  94%,
+  97% {
+    transform: scaleY(0.2);
+  }
+}

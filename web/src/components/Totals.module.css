@@ -1,0 +1,19 @@
+.rows {
+  display: grid;
+  gap: 6px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+
+.total {
+  margin-top: 4px;
+  color: var(--text);
+  font-family: var(--font-number);
+  font-size: var(--text-total);
+  font-weight: 700;
+}

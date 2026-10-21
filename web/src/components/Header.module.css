@@ -1,0 +1,120 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 12px var(--gutter);
+  min-height: 72px;
+  background: var(--surface);
+  border-bottom: var(--bevel);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mark {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: var(--bevel);
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--text);
+  box-shadow: 3px 3px 0 var(--line);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.tagline {
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 18px;
+}
+
+.steps {
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.stepNumber {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 2px solid currentColor;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-text);
+  font-size: 14px;
+}
+
+.current {
+  color: var(--text);
+}
+
+.current .stepNumber {
+  background: var(--primary);
+  border-color: var(--line);
+  color: var(--on-primary);
+  box-shadow: 2px 2px 0 var(--line);
+}
+
+.done {
+  color: var(--success);
+}
+
+.done .stepNumber {
+  background: var(--accent);
+  border-color: var(--line);
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--gap-tap);
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--tap-min);
+  padding: 0 16px;
+  border: var(--bevel);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: 3px 3px 0 var(--line);
+  font-weight: 600;
+  font-size: var(--text-small);
+  transition:
+    transform var(--motion-fast),
+    box-shadow var(--motion-fast);
+}
+
+.action:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--lift-pressed);
+}

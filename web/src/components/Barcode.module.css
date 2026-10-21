@@ -1,0 +1,6 @@
+.barcode {
+  display: block;
+  width: 100%;
+  height: 48px;
+  fill: var(--line);
+}

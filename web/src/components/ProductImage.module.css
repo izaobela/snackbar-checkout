@@ -1,0 +1,36 @@
+.image {
+  display: block;
+  filter: saturate(0.95) contrast(0.97);
+}
+
+.blend {
+  mix-blend-mode: multiply;
+}
+
+.tile {
+  display: inline-grid;
+  place-items: center;
+  color: var(--primary-deep);
+  background: var(--primary-tint);
+}
+
+.drinks {
+  background: var(--tile-drinks-bg);
+  color: var(--tile-drinks-fg);
+}
+.bakery {
+  background: var(--tile-bakery-bg);
+  color: var(--tile-bakery-fg);
+}
+.snacks {
+  background: var(--tile-snacks-bg);
+  color: var(--tile-snacks-fg);
+}
+.sweets {
+  background: var(--tile-sweets-bg);
+  color: var(--tile-sweets-fg);
+}
+.fresh {
+  background: var(--tile-fresh-bg);
+  color: var(--tile-fresh-fg);
+}

@@ -1,0 +1,132 @@
+.panel {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 0;
+  background: var(--surface);
+  border: var(--bevel);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--lift);
+  overflow: hidden;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 18px 20px 12px;
+  border-bottom: 2px dashed var(--border);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-title);
+  font-weight: 700;
+}
+
+.count {
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+
+.lines {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.empty {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  padding: 28px 16px;
+  margin-top: 16px;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-md);
+  color: var(--muted);
+  text-align: center;
+}
+
+.emptyTitle {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: var(--text-item);
+  font-weight: 600;
+}
+
+.emptyHint {
+  font-size: var(--text-small);
+}
+
+.line {
+  display: grid;
+  gap: 8px;
+  padding: 14px 0;
+  border-bottom: 2px dashed var(--border);
+}
+
+.lineTop,
+.lineBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.lineName {
+  font-weight: 600;
+}
+
+.lineTotal {
+  font-family: var(--font-number);
+  font-weight: 700;
+  font-size: var(--text-price);
+}
+
+.stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-tap);
+}
+
+.stepButton {
+  display: inline-grid;
+  place-items: center;
+  width: var(--tap-min);
+  height: var(--tap-min);
+  border: var(--bevel);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 3px 3px 0 var(--line);
+  transition:
+    transform var(--motion-fast),
+    box-shadow var(--motion-fast);
+}
+
+.stepButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--lift-pressed);
+}
+
+.qty {
+  min-width: 28px;
+  text-align: center;
+  font-family: var(--font-number);
+  font-size: var(--text-price);
+  font-weight: 700;
+}
+
+.each {
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+
+.foot {
+  display: grid;
+  gap: 10px;
+  padding: 16px 20px 20px;
+  border-top: var(--bevel);
+  background: var(--surface-2);
+}

@@ -1,0 +1,1 @@
+"""Snack bar checkout API."""

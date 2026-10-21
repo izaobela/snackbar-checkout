@@ -1,0 +1,75 @@
+.screen {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: var(--gutter);
+}
+
+.card {
+  display: grid;
+  gap: 20px;
+  width: min(720px, 100%);
+  padding: 36px;
+  background: var(--surface);
+  border: var(--bevel);
+  border-radius: var(--radius-lg);
+  box-shadow: 6px 6px 0 var(--line);
+}
+
+.icon {
+  display: inline-grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border: var(--bevel);
+  border-radius: var(--radius-md);
+  background: var(--sun);
+  color: var(--text);
+  box-shadow: 3px 3px 0 var(--line);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  font-size: var(--text-item);
+}
+
+.item > svg {
+  color: var(--primary-deep);
+  margin-top: 4px;
+}
+
+.newTotal {
+  margin-top: 6px;
+  font-family: var(--font-number);
+  font-size: var(--text-total);
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap-tap);
+  flex-wrap: wrap;
+}

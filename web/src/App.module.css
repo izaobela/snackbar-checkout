@@ -1,0 +1,31 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  min-height: 0;
+}
+
+.main:focus {
+  outline: none;
+}
+
+.footer {
+  padding: 6px var(--gutter);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 16px;
+  text-align: center;
+  border-top: var(--bevel);
+  background: var(--surface);
+}
+
+.dialogBody {
+  font-size: var(--text-item);
+  color: var(--text);
+}

@@ -1,0 +1,33 @@
+{
+  "categories": [
+    { "id": "drinks", "name": "Drinks" },
+    { "id": "bakery", "name": "Bakery" },
+    { "id": "snacks", "name": "Snacks" },
+    { "id": "sweets", "name": "Sweets" },
+    { "id": "fresh", "name": "Fresh" }
+  ],
+  "items": [
+    { "id": "flat-white", "category": "drinks", "name": "Flat white", "code": "IB-0001", "description": "Double shot, silky milk, 240 ml", "price_cents": 450, "tags": ["vegetarian"], "allergens": ["milk"], "available": true, "image": "/images/flat-white.jpg" },
+    { "id": "iced-tea", "category": "drinks", "name": "Iced tea", "code": "IB-0002", "description": "Black tea, unsweetened, lemon, 400 ml", "price_cents": 325, "tags": ["vegan", "gluten-free"], "allergens": [], "available": true, "image": "/images/iced-tea.jpg" },
+    { "id": "sparkling-water", "category": "drinks", "name": "Sparkling water", "code": "IB-0003", "description": "Chilled, 350 ml bottle", "price_cents": 250, "tags": ["vegan", "gluten-free"], "allergens": [], "available": true, "stock": 1, "image": "/images/sparkling-water.jpg" },
+    { "id": "drip-coffee", "category": "drinks", "name": "Drip coffee", "code": "IB-0004", "description": "House blend, 350 ml", "price_cents": 275, "tags": ["vegan", "gluten-free"], "allergens": [], "available": true, "image": "/images/drip-coffee.jpg" },
+    { "id": "hot-chocolate", "category": "drinks", "name": "Hot chocolate", "code": "IB-0005", "description": "Made with whole milk, 300 ml", "price_cents": 375, "tags": ["vegetarian"], "allergens": ["milk"], "available": true, "image": "/images/hot-chocolate.jpg" },
+
+    { "id": "butter-croissant", "category": "bakery", "name": "Butter croissant", "code": "IB-0006", "description": "Baked this morning, 70 g", "price_cents": 375, "tags": ["vegetarian"], "allergens": ["wheat", "milk", "egg"], "available": true, "image": "/images/butter-croissant.jpg" },
+    { "id": "everything-bagel", "category": "bakery", "name": "Everything bagel", "code": "IB-0007", "description": "Toasted, cream cheese, 120 g", "price_cents": 350, "tags": ["vegetarian"], "allergens": ["wheat", "milk", "sesame"], "available": true, "image": "/images/everything-bagel.jpg" },
+    { "id": "blueberry-muffin", "category": "bakery", "name": "Blueberry muffin", "code": "IB-0008", "description": "Oat crumble top, 110 g", "price_cents": 395, "tags": ["vegetarian"], "allergens": ["wheat", "milk", "egg"], "available": false, "image": "/images/blueberry-muffin.jpg" },
+
+    { "id": "sea-salt-chips", "category": "snacks", "name": "Sea salt chips", "code": "IB-0009", "description": "Kettle cooked, 60 g bag", "price_cents": 225, "tags": ["vegan", "gluten-free"], "allergens": [], "available": true, "image": "/images/sea-salt-chips.jpg" },
+    { "id": "trail-mix", "category": "snacks", "name": "Trail mix", "code": "IB-0010", "description": "Almonds, peanuts, raisins, chocolate, 50 g", "price_cents": 350, "tags": ["vegetarian", "gluten-free"], "allergens": ["peanuts", "tree nuts", "milk"], "available": true, "image": "/images/trail-mix.jpg" },
+    { "id": "soft-pretzel", "category": "snacks", "name": "Soft pretzel", "code": "IB-0011", "description": "Warm, salted, mustard on the side, 150 g", "price_cents": 400, "tags": ["vegan"], "allergens": ["wheat"], "available": true, "image": "/images/soft-pretzel.jpg" },
+
+    { "id": "chocolate-chip-cookie", "category": "sweets", "name": "Chocolate chip cookie", "code": "IB-0012", "description": "Soft center, sea salt, 60 g", "price_cents": 275, "tags": ["vegetarian"], "allergens": ["wheat", "egg", "milk"], "available": true, "image": "/images/chocolate-chip-cookie.jpg" },
+    { "id": "fudge-brownie", "category": "sweets", "name": "Fudge brownie", "code": "IB-0013", "description": "Dark chocolate, walnuts, 90 g", "price_cents": 350, "tags": ["vegetarian"], "allergens": ["wheat", "egg", "milk", "tree nuts"], "available": true, "image": "/images/fudge-brownie.jpg" },
+    { "id": "ice-cream-sandwich", "category": "sweets", "name": "Ice cream sandwich", "code": "IB-0014", "description": "Vanilla between chocolate wafers, 100 g", "price_cents": 350, "tags": ["vegetarian"], "allergens": ["milk", "wheat", "soy"], "available": false, "image": "/images/ice-cream-sandwich.jpg" },
+
+    { "id": "fruit-cup", "category": "fresh", "name": "Fruit cup", "code": "IB-0015", "description": "Melon, grapes, pineapple, 250 g", "price_cents": 425, "tags": ["vegan", "gluten-free"], "allergens": [], "available": true, "image": "/images/fruit-cup.jpg" },
+    { "id": "yogurt-parfait", "category": "fresh", "name": "Yogurt parfait", "code": "IB-0016", "description": "Greek yogurt, granola, berries, 300 g", "price_cents": 550, "tags": ["vegetarian"], "allergens": ["milk", "wheat", "tree nuts"], "available": true, "image": "/images/yogurt-parfait.jpg" },
+    { "id": "turkey-club", "category": "fresh", "name": "Turkey club", "code": "IB-0017", "description": "Roast turkey, bacon, avocado, 280 g", "price_cents": 895, "tags": [], "allergens": ["wheat", "egg", "milk"], "available": true, "image": "/images/turkey-club.jpg" },
+    { "id": "caprese-sandwich", "category": "fresh", "name": "Caprese sandwich", "code": "IB-0018", "description": "Mozzarella, tomato, basil, ciabatta, 250 g", "price_cents": 850, "tags": ["vegetarian"], "allergens": ["wheat", "milk"], "available": true, "image": "/images/caprese-sandwich.jpg" }
+  ]
+}

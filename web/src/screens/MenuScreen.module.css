@@ -1,0 +1,127 @@
+.layout {
+  display: grid;
+  grid-template-columns: var(--rail-width) 1fr var(--panel-width);
+  gap: 16px;
+  min-height: 0;
+  height: 100%;
+  padding: 16px var(--gutter);
+}
+
+.rail {
+  display: grid;
+  align-content: start;
+  gap: var(--gap-tap);
+}
+
+.railButton {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  min-height: 72px;
+  padding: 10px 8px;
+  border: var(--bevel);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 3px 3px 0 var(--line);
+  transition:
+    transform var(--motion-fast),
+    box-shadow var(--motion-fast);
+}
+
+.railButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--lift-pressed);
+}
+
+.railActive {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+.grid {
+  min-height: 0;
+  overflow-y: auto;
+  padding: 4px 8px 8px 4px;
+  scroll-padding-top: 8px;
+}
+
+.hint {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+
+.legend {
+  display: block;
+  font-size: 15px;
+}
+
+.loading {
+  padding: 40px 0;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: var(--text-item);
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  margin: 4px 0 12px;
+  font-family: var(--font-display);
+  font-size: var(--text-title);
+  font-weight: 700;
+}
+
+.sectionCount {
+  margin-left: 8px;
+  color: var(--muted);
+  font-family: var(--font-text);
+  font-size: var(--text-small);
+  font-weight: 400;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.unavailable {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 16px;
+  height: 100%;
+  padding: var(--gutter);
+  text-align: center;
+  color: var(--text);
+}
+
+.unavailable > svg {
+  color: var(--danger);
+}
+
+.unavailableTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 700;
+}
+
+.unavailableBody {
+  max-width: 36ch;
+  color: var(--muted);
+  font-size: var(--text-item);
+}
+
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 120px 1fr 320px;
+  }
+}

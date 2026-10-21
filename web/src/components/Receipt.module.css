@@ -1,0 +1,90 @@
+/* The children read their font through the token, so one override here covers them. */
+.paper {
+  --font-number: 'Cascadia Mono', ui-monospace, 'Courier New', monospace;
+  position: relative;
+  display: grid;
+  gap: 12px;
+  padding: 22px 20px 26px;
+  background: #fffdf6;
+  color: var(--text);
+  font-family: var(--font-number);
+  font-size: 15px;
+  line-height: 1.4;
+  box-shadow: var(--lift);
+}
+
+.paper::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 10px;
+  background:
+    linear-gradient(135deg, #fffdf6 50%, transparent 50%) 0 0 / 20px 10px repeat-x,
+    linear-gradient(225deg, #fffdf6 50%, transparent 50%) 10px 0 / 20px 10px repeat-x;
+}
+
+.head {
+  display: grid;
+  gap: 2px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed var(--border);
+  text-align: center;
+}
+
+.shop {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.meta {
+  color: var(--muted);
+}
+
+.orderNumber {
+  margin-top: 6px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.totals {
+  padding-top: 10px;
+  border-top: 2px dashed var(--border);
+}
+
+.tender {
+  color: var(--muted);
+}
+
+.code {
+  display: grid;
+  gap: 4px;
+  padding: 10px 0 0;
+  border-top: 2px dashed var(--border);
+  text-align: center;
+}
+
+.codeText {
+  letter-spacing: 0.3em;
+  font-weight: 700;
+}
+
+.codeText::before {
+  content: 'Ref ';
+  color: var(--muted);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}

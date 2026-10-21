@@ -1,0 +1,69 @@
+/* 48 px minimum targets, 64 px for the main ones, 20 px body text. */
+
+:root {
+  --tap-primary: 64px;
+  --tap-min: 48px;
+  --gap-tap: 12px;
+  --gutter: 24px;
+
+  --text-body: 20px;
+  --text-small: 17px;
+  --text-item: 22px;
+  --text-price: 24px;
+  --text-title: 28px;
+  --text-total: 32px;
+  --text-hero: 44px;
+  --text-pickup: 120px;
+  --font-display: 'Pixelify Sans Variable', 'Inter Variable', system-ui, sans-serif;
+  --font-text: 'Inter Variable', system-ui, sans-serif;
+  /* Numbers never use the pixel face (decisions.md, 12). */
+  --font-number: var(--font-text);
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  --motion-fast: 120ms;
+  --motion-base: 200ms;
+
+  --rail-width: 152px;
+  --panel-width: 360px;
+
+  --bg: #e4eefb;
+  --surface: #f9fbff;
+  --surface-2: #edf3fc;
+  --text: #1f2a44;
+  --muted: #5b6b8c;
+  --border: #c5d5ef;
+  --line: #1f2a44;
+  --primary: #3f6ad8;
+  --primary-deep: #2f52b3;
+  --primary-tint: #dde7ff;
+  --on-primary: #ffffff;
+  --accent: #8fe3d2;
+  --accent-deep: #2f9c89;
+  --accent-tint: #e1f7f2;
+  --sun: #ffd86b;
+  --success: #1f7a4d;
+  --danger: #c43b4c;
+  --danger-tint: #ffe6e9;
+  --focus: #1f2a44;
+
+  --tile-drinks-bg: #dde7ff;
+  --tile-drinks-fg: #2f52b3;
+  --tile-bakery-bg: #fff0d2;
+  --tile-bakery-fg: #8a5a12;
+  --tile-snacks-bg: #e1f7f2;
+  --tile-snacks-fg: #1d6f5f;
+  --tile-sweets-bg: #f7e1f3;
+  --tile-sweets-fg: #8a3b7d;
+  --tile-fresh-bg: #e4f6df;
+  --tile-fresh-fg: #1f7a4d;
+
+  /* A 2 px line and a hard offset shadow; pressing shrinks the shadow. */
+  --bevel: 2px solid var(--line);
+  --lift: 4px 4px 0 var(--line);
+  --lift-soft: 4px 4px 0 var(--border);
+  --lift-pressed: 1px 1px 0 var(--line);
+  --shadow: var(--lift-soft);
+}

@@ -1,0 +1,20 @@
+services:
+  kiosk:
+    build: .
+    ports:
+      - "${PORT:-8420}:8420"
+    volumes:
+      # The database, menu included: data/menu.json only seeds it on the first start.
+      - snackbar-db:/data/db
+    restart: unless-stopped
+    # Nothing in the image is written at run time; the database lives on the volume.
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  snackbar-db: {}

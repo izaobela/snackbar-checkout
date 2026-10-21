@@ -1,0 +1,46 @@
+.notice {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  padding: 16px;
+  border: var(--bevel);
+  border-radius: var(--radius-md);
+  box-shadow: var(--lift);
+}
+
+.danger {
+  background: var(--danger-tint);
+  color: var(--danger);
+}
+
+.info {
+  background: var(--primary-tint);
+  color: var(--primary-deep);
+}
+
+.body {
+  display: grid;
+  gap: 8px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-item);
+  font-weight: 700;
+}
+
+.text {
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-tap);
+  margin-top: 4px;
+}
+
+.small {
+  color: var(--text);
+  font-size: var(--text-small);
+}
